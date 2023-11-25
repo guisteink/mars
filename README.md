@@ -5,7 +5,7 @@
     
     Returns general championship data
 
-[GET] /possibilities
+[GET] /championship/possibilities
 
     Returns calculations of title chances for the top 4 and relegation for the bottom 4
 
