@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { router as championship } from './championship';
+import { router as championship } from './baseDomain';
 
 export const router = Router();
 
-router.use('/championship', championship);
+router.use('/base', championship);

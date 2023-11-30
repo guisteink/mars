@@ -1,6 +1,6 @@
 #!/bin/bash
 
-url="http://localhost:5000/v1/championship/possibilities"
+url="http://localhost:5000/v1/baseDomain"
 
 response=$(curl -s $url)
 
