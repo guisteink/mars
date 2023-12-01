@@ -1,6 +1,6 @@
-import { IController, IUser } from '../entities/interfaces/interfaces'
+import { IBaseController, IUser } from '../entities/interfaces/interfaces'
 
-export class UserController implements IController<IUser> {
+export class UserController implements IBaseController<IUser> {
     async index(): Promise<void> {
       // Implementação para listar usuários
     }

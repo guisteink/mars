@@ -4,7 +4,7 @@ export let server: express.Application;
 
 function initServer(appName: string, port: any): void {
     console.info(`Starting ${appName} on ${port}`);
-    
+
     server = express();
 
     const bindTitle = typeof port === 'string'
@@ -19,7 +19,7 @@ function createOnServerListening(appName: string, bindTitle: string): () => void
       console.info(`${appName} - Listening on ${bindTitle}`);
     };
 }
-  
+
 export async function start(port: number): Promise<void> {
     try {
       initServer('Mars', port);
@@ -31,9 +31,6 @@ export async function start(port: number): Promise<void> {
 }
 
 async function initAppRoutes(): Promise<void> {
-  console.info('Starting routes');
-
   const routes = await import('./routes');
   server.use('/', routes.router);
 }
-
