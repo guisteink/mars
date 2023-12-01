@@ -1,4 +1,4 @@
-import { IController, IUser } from '../models/interfaces/interfaces'
+import { IController, IUser } from '../entities/interfaces/interfaces'
 
 export class UserController implements IController<IUser> {
     async index(): Promise<void> {
